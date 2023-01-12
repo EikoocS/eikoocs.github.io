@@ -43,7 +43,7 @@ leftbar_author_links: # 侧栏作者链接列表
   YouTube: https://www.youtube.com/@cookiepower-tech
   Bilibili: https://space.bilibili.com/527723838
 leftbar_friend_links: # 侧栏友链列表
-  空白友联 1: /
+  一方天地-鱼七: https://phishinqi.github.io/blog
   空白友联 2: /
   空白友联 3: /
 show_headindex_number: false # 侧栏文章目录是否显示章节编号

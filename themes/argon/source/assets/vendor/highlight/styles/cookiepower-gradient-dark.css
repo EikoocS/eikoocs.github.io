@@ -16,7 +16,7 @@ code.hljs {
 
 .hljs {
     background-color: #652487;
-    background-image: linear-gradient(160deg,#380092 , #0069d1 );
+    background-image: linear-gradient(160deg,#380092 , #00468b );
     color: #e7e4eb
 }
 
@@ -28,7 +28,7 @@ code.hljs {
 .hljs-doctag,
 .hljs-meta,
 .hljs-quote {
-    color: #af8dd9
+    color: #9e9e9e
 }
 
 .hljs-tag,
