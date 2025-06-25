@@ -33,3 +33,4 @@ jobs:
           publish_branch: page
           publish_dir: ./public
           destination_dir: blog
+  
