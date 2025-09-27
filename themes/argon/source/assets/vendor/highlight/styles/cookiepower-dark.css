@@ -1,0 +1,206 @@
+/*
+
+Cookiepower dark style (c) CookieS <cookie@cookiepower.tech>
+
+*/
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  color: #f5f7fa;
+}
+
+/* Only apply background and decorative styles to the main container, not line numbers */
+.hljs:not(.hljs-ln-numbers) {
+  background: linear-gradient(135deg, #1a1d23 0%, #1e2328 30%, #242933 70%, #2a3441 100%);
+  border-radius: 8px;
+  border: 1px solid #3d5afe;
+  box-shadow: 0 2px 12px rgba(63, 81, 181, 0.25);
+  position: relative;
+}
+
+.hljs:not(.hljs-ln-numbers)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #3f51b5 0%, #536dfe 50%, #7986cb 100%);
+  border-radius: 8px 8px 0 0;
+}
+
+/* Base syntax highlighting */
+.hljs-comment,
+.hljs-quote {
+  color: #90a4ae;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color: #81c784;
+  font-weight: 600;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag .hljs-attr {
+  color: #64b5f6;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #4dd0e1;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #7986cb;
+  font-weight: 600;
+}
+
+.hljs-type,
+.hljs-class .hljs-title {
+  color: #7986cb;
+  font-weight: 500;
+}
+
+.hljs-tag,
+.hljs-name,
+.hljs-attribute {
+  color: #4fc3f7;
+  font-weight: normal;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #4dd0e1;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #26c6da;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #64b5f6;
+}
+
+.hljs-meta {
+  color: #7986cb;
+}
+
+.hljs-deletion {
+  background: #3e2723;
+  color: #ef5350;
+}
+
+.hljs-addition {
+  background: #1b5e20;
+  color: #66bb6a;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+}
+
+/* Language specific */
+.hljs-function .hljs-title {
+  color: #81c784;
+}
+
+.hljs-params {
+  color: #cfd8dc;
+}
+
+.hljs-attr {
+  color: #4fc3f7;
+}
+
+.hljs-value {
+  color: #4dd0e1;
+}
+
+/* JSON specific */
+.hljs-property {
+  color: #81c784;
+}
+
+/* CSS specific */
+.hljs-selector-class {
+  color: #64b5f6;
+}
+
+.hljs-selector-pseudo {
+  color: #9575cd;
+}
+
+/* XML/HTML specific */
+.hljs-tag .hljs-name {
+  color: #81c784;
+}
+
+.hljs-tag .hljs-attr {
+  color: #4fc3f7;
+}
+
+.hljs-tag .hljs-string {
+  color: #4dd0e1;
+}
+
+/* Line numbers support */
+.hljs-ln-numbers {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  color: #78909c;
+  border-right: 1px solid #455a64;
+  vertical-align: top;
+  padding-right: 8px;
+  margin-right: 8px;
+  background: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  position: static !important;
+}
+
+.hljs-ln-numbers::before {
+  display: none !important;
+}
+
+.hljs-ln-code {
+  padding-left: 8px;
+}
+
+/* Scrollbar styling for webkit browsers */
+.hljs::-webkit-scrollbar {
+  height: 8px;
+}
+
+.hljs::-webkit-scrollbar-track {
+  background: #263238;
+  border-radius: 4px;
+}
+
+.hljs::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, #546e7a, #607d8b);
+  border-radius: 4px;
+}
+
+.hljs::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(90deg, #607d8b, #78909c);
+}
