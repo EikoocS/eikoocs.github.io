@@ -13,7 +13,7 @@ toolbar_icon: '' # 顶栏图标图片地址，留空则不显示
 toolbar_icon_link: '' # 顶栏图标链接，点击时跳转
 toolbar_title: '' # 顶栏标题，留空则跟随博客标题
 toolbar_menu: # 顶栏菜单，支持二级菜单
-  首页: /home
+  首页: /
   归档: /archives
 
 # Banner
