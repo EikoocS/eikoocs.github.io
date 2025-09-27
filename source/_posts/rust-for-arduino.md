@@ -4,8 +4,6 @@ date: 2023-11-05 15:09:14
 tags: rust
 ---
 
-# 使用 Rust 编写 Arduino Uno 程序
-
 ## 零、测试环境
 
 使用的环境为
@@ -30,13 +28,13 @@ Linux可以直接使用包管理器安装，包名一般为 avr-gcc （或 gcc-a
 
 #### Windows
 
-#####　通过 msys2 安装：
+##### 通过 msys2 安装
 
 ```shell
 pacman -S mingw-w64-x86_64-avr-gcc
 ```
 
-##### 通过 scoop 安装：
+##### 通过 scoop 安装
 
 安装 scoop （已经安装了 scoop 则可以跳过此步骤）
 
@@ -142,11 +140,11 @@ target = "avr-atmega328p.json"
 build-std = ["core"]
 ```
 
-**至此，基础的环境配置已经完成，下面将编写用于测试的代码**
+至此，基础的环境配置已经完成，下面将编写用于测试的代码
 
 ## 二、测试代码
 
-修改 `main.rs` 
+修改 `main.rs`
 
 ```rust
 #![no_std] // 嵌入式环境并不包含全部标准库，故标记 no_std
@@ -193,9 +191,9 @@ avrdude^
 
 逐行解析这条命令 **粗体部分为必须阅读，可能根据环境不同需要手动调整的内容**
 
-- `-C` 指定配置文件的位置，**如果使用 `scoop ` 安装，则位于`{用户目录}\scoop\apps\avrdude\{版本号}\avrdude.conf`，其他安装方法和其他系统可以通过 Everything 等工具搜索 `avrdude.conf` 来找到**
+- `-C` 指定配置文件的位置，**如果使用 `scoop` 安装，则位于`{用户目录}\scoop\apps\avrdude\{版本号}\avrdude.conf`，其他安装方法和其他系统可以通过 Everything 等工具搜索 `avrdude.conf` 来找到**
 - `-p` 指定 AVR 设备，在这里是 `atmega328p`
-- `-c` 指定编程器类型，在这里为 `arduino` 
+- `-c` 指定编程器类型，在这里为 `arduino`
 - `-P` 指定链接端口，**可以通过 `设备管理器>端口（COM 和 LPT）> Arduino Uno` 在其后括号中找到**
 - `-D` 禁用闪存的自动擦除功能
 - `-U` 执行的内存操作，格式为 `<memtype>:r|w|v:<filename>[:format]` 在这里的效果为指定操作目标为缓存（`flash`），读取指定文件（`target\avr-atmega328p\debug\rust-arduino-test.elf`）并将其写入指定的目标（`w`），文件格式为 ELF 格式（`e`）
@@ -209,4 +207,3 @@ avrdude^
 [Rahix/avr-hal GitHub](https://github.com/Rahix/avr-hal)
 
 [avrdude#Option-Descriptions](https://avrdudes.github.io/avrdude/7.2/avrdude_3.html#Option-Descriptions)
-
