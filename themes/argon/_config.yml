@@ -129,6 +129,7 @@ giscus: # https://giscus.app/zh-CN
   input_position: 'top'
   theme: 'light'
   lang: 'zh-CN'
+  loading: 'lazy'
 waline: # https://waline.js.org/guide/get-started.html
   enable: false # 是否启用 Waline 评论系统
   server_url: '' 
