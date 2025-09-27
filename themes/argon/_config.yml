@@ -43,9 +43,9 @@ leftbar_author_links: # 侧栏作者链接列表
   # YouTube: https://www.youtube.com/@cookiepower-tech
   # Bilibili: https://space.bilibili.com/527723838
 leftbar_friend_links: # 侧栏友链列表
-  # 一方天地-鱼七: https://phishinqi.github.io/blog
-  空白友联 2: /
-  空白友联 3: /
+  一方天地-鱼七: https://phishinqi.github.io/blog
+  # 空白友联 2: /
+  # 空白友联 3: /
 show_headindex_number: false # 侧栏文章目录是否显示章节编号
 
 # 文章
@@ -132,6 +132,10 @@ giscus: # https://giscus.app/zh-CN
 waline: # https://waline.js.org/guide/get-started.html
   enable: false # 是否启用 Waline 评论系统
   server_url: '' 
+twikoo: # https://twikoo.js.org
+  enable: false # 是否启用 Twikoo 评论系统
+  envID: ' '
+  lang: 'zh-CN'
 
 # 分析
 # 百度统计
