@@ -120,11 +120,11 @@ gitalk:
   clientID: ''
   clientSecret: ''
 giscus: # https://giscus.app/zh-CN
-  enable: false # 是否启用 Giscus 评论系统
-  repo: ''
-  repo_id: ''
-  category: ''
-  category_id: ''
+  enable: true # 是否启用 Giscus 评论系统
+  repo: 'EikoocS/eikoocs.github.io'
+  repo_id: 'R_kgDOIwZQtA'
+  category: 'Announcements'
+  category_id: 'DIC_kwDOIwZQtM4Cv9ha'
   mapping: 'pathname'
   input_position: 'top'
   theme: 'light'
