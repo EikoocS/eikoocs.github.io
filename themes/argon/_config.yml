@@ -32,9 +32,9 @@ sidebar_announcement: '' # 侧栏公告，留空则不显示
 leftbar_menu: # 侧栏顶部菜单，支持无限层级菜单嵌套
   首页: /
   归档: /archives
-  二级菜单:
-    三级菜单:
-      首页: /
+  # 二级菜单:
+  #   三级菜单:
+  #     首页: /
 sidebar_auther_image: '/assets/img/cookie.png' # 侧栏作者头像
 sidebar_auther_name: '' # 侧栏作者名，留空则跟随博客名
 leftbar_author_links: # 侧栏作者链接列表
