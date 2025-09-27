@@ -116,6 +116,11 @@
 		<%- partial('_comment/waline') %>
 	</div>
 <% } %>
+<% if (theme.twikoo.enable) { %>
+	<div id="post_comment" class="card shadow-sm">
+		<%- partial('_comment/twikoo') %>
+	</div>
+<% } %>
 <%
 	function get_prev_next_post_card(){
 		let res = "";
