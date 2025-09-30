@@ -46,8 +46,7 @@ tags: [cpp, boost]
 
 若有特殊需求，包管理器满足不了需求，也可以编译安装。
 
-```shell
-cat << 'EOF' > install_boost.sh
+```shell title = "install_boost.sh"
 #!/bin/bash
 
 # 设置Boost版本
@@ -83,16 +82,18 @@ if [ "\$INSTALL_DIR" != "/usr/local" ]; then
 fi
 
 echo "Boost \$BOOST_VERSION installed successfully!"
-EOF
 
+```
+
+然后执行以上脚本
+
+```shell
 # 赋予脚本执行权限
 chmod +x install_boost.sh
 
 # 执行脚本
 ./install_boost.sh
 ```
-
-以上命令可以直接输入终端并安装。
 
 文章中的版本为 2025-1-5 时的最新版本，安装时请将 `BOOST_VERSION` 变量设置为自己想安装的版本。
 
