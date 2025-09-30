@@ -46,7 +46,7 @@ tags: [cpp, boost]
 
 若有特殊需求，包管理器满足不了需求，也可以编译安装。
 
-```shell
+```bash
 #!/bin/bash
 
 # 设置Boost版本
