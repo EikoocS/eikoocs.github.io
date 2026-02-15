@@ -108,3 +108,129 @@ search:
   path: search.xml
   field: post
   content: true
+
+# https://github.com/dimaslanjaka/hexo-seo
+seo:
+  # enable persistent cache for faster builds
+  cache: true
+  # blog hostname (auto-detected if omitted)
+  host: blog.cookiepower.com
+  # minify html
+  html:
+    enable: true
+    # fix invalid html
+    fix: true
+    # exclude from minify
+    exclude:
+      - "*.min.{htm,html}"
+    # collapse boolean attributes (default: true)
+    collapseBooleanAttributes: true
+    # remove unnecessary whitespace (default: true)
+    collapseWhitespace: true
+    # ignore custom comments (regex supported)
+    ignoreCustomComments:
+      - "^\\s*more"
+    # remove HTML comments
+    removeComments: true
+    # remove empty attributes
+    removeEmptyAttributes: true
+    # remove type="text/javascript" from script tags
+    removeScriptTypeAttributes: true
+    # remove type="text/css" from style/link tags
+    removeStyleLinkTypeAttributes: true
+    # minify inline JS
+    minifyJS: true
+    # minify inline CSS
+    minifyCSS: true
+  # minify css
+  css:
+    enable: true
+    # If you want to customize the css minifier settings, you can put below
+    # exclude css from minifying, multiple supported
+    exclude:
+      - "*.min.css"
+      - "**/*.min.css"
+  # minify js
+  js:
+    enable: true
+    # concatenate all js into one tag
+    ## WARNING: DO NOT USING ANOTHER MINIFIER PLUGIN
+    concat:
+      enable: false
+      # download external JS before concatenation
+      download_external: false
+    # If you want to customize the js minifier settings, you can put below
+    # exclude js from minifying, multiple supported
+    exclude:
+      - "*.min.js"
+      - "**/*.min.js"
+    # this is terser options, you can customize minifier with terser options
+    # https://github.com/terser/terser?tab=readme-ov-file#minify-options-structure
+    # below is config example
+    options:
+      compress:
+        dead_code: true
+      mangle:
+        toplevel: true
+        safari10: true
+  # rich snippets
+  schema:
+    # produce schema for page and post
+    article:
+      enable: true
+    # produce schema for breadcrumb
+    breadcrumb:
+      enable: true
+    # produce schema for sitelink
+    sitelink:
+      enable: true
+      searchUrl: https://www.webmanajemen.com/search?q={search_term_string}
+    # produce schema for homepage
+    homepage:
+      enable: true
+  # this function still under development because JAVASCRIPT HEAP MEMORY and my device is 8GB RAM
+  img:
+    enable: true
+    # fix broken images
+    broken: false
+    # default broken/missing images
+    # https://github.com/dimaslanjaka/hexo-seo/blob/f4cf27fbc7de2b831462d3b26cf70ece2499d15b/src/search/index.ts#L53
+    default: https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg
+    # broken images methods
+    # serverside : process broken images from server side (caused javascript heap out of memory, if your post large and your device has insufficient memory)
+    # clientside : process broken image from client side browser with webjs
+    onerror: serverside
+  # external links fix
+  links:
+    # enable or false
+    enable: true
+    # open external links in new tab
+    blank: true
+    # allowed following links, otherwise nofollow others
+    allow:
+      - webmanajemen.com
+    # exclude these domains from nofollow
+    exclude:
+      - webmanajemen.com
+      - web-manajemen.blogspot.com
+  # seo-friendly sitemap
+  # you can fill value `sitemap: true` to create both sitemaps
+  sitemap:
+    # auto generate seo friendly sitemap on http://yoursite.com/sitemap.xml
+    # forked from yoast seo
+    # location: /sitemap.xml /page-sitemap.xml /post-sitemap.xml /category-sitemap.xml /tag-sitemap.xml
+    yoast: true
+    # google news sitemap
+    # location: /google-news-sitemap.xml
+    gnews: true
+    # sitemap.txt
+    # location: /sitemap.txt
+    txt: true
+  search:
+    # hexo seo-search page type to index
+    type: ['page', 'post']
+  feed:
+    # hexo seo-feed page type to index
+    type: [page, post]
+    # site icon for rss (PNG, JPEG, GIF)
+    icon: 'https://w7.pngwing.com/pngs/745/306/png-transparent-gallery-image-images-photo-picture-pictures-set-app-incredibles-icon-thumbnail.png'
