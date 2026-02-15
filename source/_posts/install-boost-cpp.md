@@ -1,6 +1,7 @@
 ---
 title: Boost C++ Libraries 安装指南
 date: 2025-06-25 16:20:00
+categories: development
 tags: [cpp, boost]
 ---
 

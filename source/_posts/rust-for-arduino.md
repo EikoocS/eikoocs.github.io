@@ -1,6 +1,7 @@
 ---
 title: 使用 Rust 编写 Arduino Uno 程序
 date: 2023-11-05 15:09:14
+categories: development
 tags: rust
 ---
 
